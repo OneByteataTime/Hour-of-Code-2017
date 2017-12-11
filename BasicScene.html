@@ -5,16 +5,26 @@
   </head>
   <body>
     <a-scene>
-      <a-box color="red" position="0 2 -5" rotation="0 45 65" scale="2 2 2"></a-box>
+      <a-box color="red" position="1 2 -5" rotation="0 45 65" scale="2 2 2">
+
+      </a-box>
       <a-sphere color="00ff00" position="-1 2 -3"></a-sphere>
 
       <a-sky color="#C2F2FD"></a-sky>
       <a-plane rotation="-90 0 0" width="30" height="30"></a-plane>
-      <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="0" position="2 4 4"></a-light>
+      <a-light type="ambient" color="#26802C"></a-light>
+      <a-light type="point" intensity="0.75" position="2 4 4"></a-light>
 
-      <a-text value="Hello, Hour of Code" color="#882288"
-        position="-1.2 0.2 -3" scale="1.5 1.5 1.5"></a-text>
+      <!-- Out of the box environment! -->
+      
+      <!--
+        <a-animation attribute="position" to="0 2.2 -5.7" direction="alternate" dur="2000"
+      repeat="indefinite"></a-animation>
+        <a-entity environment="preset: japan; numDressing: 500"></a-entity>
+        <a-light type="ambient" color="#445451"></a-light>
+-->
+      <a-text value="Hello, Hour of Code" color="#fff"
+        position="-1.2 0.2 -3" scale="2 2 2" rotation="-30 25 2"></a-text>
     </a-scene>
   </body>
 </html>
